@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Taiwan Girls' Summer Getaway 2026</title>
+<style>
+:root{
+  --sun:#FFE680;
+  --lemon:#FFF7B8;
+  --butter:#FFFBE6;
+  --peach:#FFD6A5;
+  --pink:#FFB6D9;
+  --rose:#E85E9F;
+  --lav:#D8C7FF;
+  --mint:#CFF7E8;
+  --sky:#CDEBFF;
+  --ink:#4D4251;
+  --card:#FFFFFFE8;
+  --shadow:0 14px 32px rgba(210,150,70,.22);
+}
+*{box-sizing:border-box}
+body{
+  margin:0;
+  font-family:'Trebuchet MS',Arial,sans-serif;
+  color:var(--ink);
+  background:linear-gradient(135deg,#fffbe8 0%,#fff3b0 28%,#ffd9ec 60%,#e9fff7 100%);
+  line-height:1.55;
+}
+.hero{min-height:100vh;padding:42px 20px;display:flex;align-items:center;justify-content:center;text-align:center;position:relative;overflow:hidden}
+.hero:before,.hero:after{content:"";position:absolute;border-radius:50%;filter:blur(1px);opacity:.58}
+.hero:before{width:360px;height:360px;background:#fff099;left:-90px;top:-80px}
+.hero:after{width:330px;height:330px;background:#ffb6d9;right:-80px;bottom:-70px}
+.hero-inner{max-width:1150px;position:relative;z-index:1}
+.badge{display:inline-block;background:white;padding:10px 18px;border-radius:999px;box-shadow:var(--shadow);font-weight:800;color:#c25a00}
+.title{font-size:clamp(34px,7vw,74px);margin:22px 0 20px;line-height:1.02;color:#b94f8c;text-shadow:2px 3px 0 #fff2a8}
+.quick{display:grid;grid-template-columns:repeat(5,1fr);gap:16px;margin-top:34px}
+.quick button,.topnav button{cursor:pointer;border:0;text-decoration:none;color:var(--ink);background:var(--card);border:3px solid white;border-radius:28px;padding:12px;box-shadow:var(--shadow);transition:.2s;font-family:inherit;font-size:16px}
+.quick button:hover,.topnav button:hover,.quick button.active,.topnav button.active{transform:translateY(-5px);background:#fffdf2;border-color:#ffcd65}
+.cover-img{width:100%;height:125px;object-fit:cover;border-radius:22px;margin-bottom:10px;background:#fff0b6;border:2px solid white;display:block}
+.cover-fallback{height:125px;border-radius:22px;margin-bottom:10px;background:linear-gradient(135deg,#fff4a8,#ffd3e8);display:flex;align-items:center;justify-content:center;font-size:46px;border:2px solid white}
+.day-label{font-weight:900;color:#d26b00}.wrap{max-width:1200px;margin:auto;padding:28px 18px 70px;display:none}.wrap.show{display:block}
+.topnav{position:sticky;top:0;z-index:10;display:flex;gap:10px;flex-wrap:wrap;justify-content:center;background:linear-gradient(135deg,#fff8b7,#ffd9ec);padding:14px;border-bottom:1px solid #fff0a0}
+.topnav button{padding:10px 14px;border-radius:999px;font-size:14px;box-shadow:0 8px 18px rgba(156,90,70,.14)}
+.day{display:none;background:var(--card);border:3px solid white;border-radius:34px;margin:28px 0;padding:24px;box-shadow:var(--shadow)}
+.day.active{display:block}.day h2{font-size:32px;margin:0 0 6px;color:#c44e91}.stay{background:linear-gradient(90deg,#fff,#fff2a8);padding:12px 16px;border-radius:18px;margin:12px 0;font-weight:800}
+.day-hero{width:100%;height:250px;object-fit:cover;border-radius:28px;border:4px solid white;box-shadow:var(--shadow);background:#fff2a8;margin:12px 0 20px}
+.grid{display:grid;grid-template-columns:1.25fr .85fr;gap:18px}.box{background:white;border-radius:24px;padding:18px;border:1px solid #ffe6a7}.box h3{margin-top:0;color:#8060cc}.timeline{display:grid;gap:12px}
+.slot{display:grid;grid-template-columns:150px 130px 1fr;gap:12px;align-items:start;background:#fffdf0;border-radius:20px;padding:12px;border:1px solid #fff0b7}.time{font-weight:900;color:#d26b00}.mini-img{width:120px;height:92px;object-fit:cover;border-radius:16px;background:#fff0b6;border:2px solid white}.tag{display:inline-block;background:#fff0b8;color:#a35d00;border-radius:999px;padding:4px 10px;font-size:13px;margin:3px;font-weight:700}
+.budget{width:100%;border-collapse:collapse;background:white;border-radius:20px;overflow:hidden}.budget th{background:#ffe680}.budget th,.budget td{padding:10px;border-bottom:1px solid #fff0b7;text-align:left}.total{font-weight:900;background:#fff7ce}.outfits{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}.girl{background:#fff7fb;border-radius:18px;padding:12px;border:1px solid #ffe2f1}.outfit-img{width:100%;height:120px;object-fit:cover;border-radius:16px;background:#fff0b6;border:2px solid white;margin-bottom:8px}.note{font-size:14px;background:#ecfff8;border-radius:18px;padding:14px;margin-top:14px;border:1px solid #c9f7e9}.notes-page textarea{width:100%;min-height:360px;border:2px solid #ffd66e;border-radius:24px;padding:18px;font:16px 'Trebuchet MS',Arial,sans-serif;color:var(--ink);background:#fffdfd;outline:none;resize:vertical}.savebar{display:flex;gap:10px;align-items:center;flex-wrap:wrap;margin-top:12px}.savebar button{border:0;background:#ffb000;color:white;font-weight:900;padding:12px 18px;border-radius:999px;cursor:pointer}.savebar span{color:#7b5cd6;font-weight:700}.footer{text-align:center;padding:40px;color:#7e6b83}
+@media(max-width:900px){.quick,.grid,.outfits{grid-template-columns:1fr}.slot{grid-template-columns:1fr}.mini-img{width:100%;height:170px}.hero{min-height:auto}.title{font-size:42px}.wrap{padding-top:8px}}
+@media print{.hero,.topnav{display:none}.wrap,.day,.day.active{display:block;box-shadow:none}body{background:white}.day{break-inside:avoid}}
+</style>
+</head>
+<body>
+<section class="hero" id="home">
+ <div class="hero-inner">
+  <span class="badge">☀️ July 8–12, 2026 • 5 Days • 3 Girls</span>
+  <h1 class="title">Taiwan Girls’ Summer Getaway</h1>
+  <div class="quick">
+   <button onclick="showDay('day1')"><img class="cover-img" src="d1.png" onerror="this.onerror=null;this.src='d1.jpg';this.onerror=function(){this.outerHTML='<div class=&quot;cover-fallback&quot;>🏙️</div>'}"><span class="day-label">Day 1</span><br>Taipei City</button>
+   <button onclick="showDay('day2')"><img class="cover-img" src="d2.png" onerror="this.onerror=null;this.src='d2.jpg';this.onerror=function(){this.outerHTML='<div class=&quot;cover-fallback&quot;>🏮</div>'}"><span class="day-label">Day 2</span><br>Jiufen Lantern</button>
+   <button onclick="showDay('day3')"><img class="cover-img" src="d3.png" onerror="this.onerror=null;this.src='d3.jpg';this.onerror=function(){this.outerHTML='<div class=&quot;cover-fallback&quot;>🚲</div>'}"><span class="day-label">Day 3</span><br>Sun Moon Lake</button>
+   <button onclick="showDay('day4')"><img class="cover-img" src="d4.png" onerror="this.onerror=null;this.src='d4.jpg';this.onerror=function(){this.outerHTML='<div class=&quot;cover-fallback&quot;>🌲</div>'}"><span class="day-label">Day 4</span><br>Alishan</button>
+   <button onclick="showDay('day5')"><img class="cover-img" src="d5.png" onerror="this.onerror=null;this.src='d5.jpg';this.onerror=function(){this.outerHTML='<div class=&quot;cover-fallback&quot;>🐉🐯</div>'}"><span class="day-label">Day 5</span><br>Kaohsiung</button>
+  </div>
+ </div>
+</section>
+
+<nav class="topnav">
+ <button onclick="goHome()">🏠 Home</button>
+ <button onclick="showDay('day1')">Day 1</button>
+ <button onclick="showDay('day2')">Day 2</button>
+ <button onclick="showDay('day3')">Day 3</button>
+ <button onclick="showDay('day4')">Day 4</button>
+ <button onclick="showDay('day5')">Day 5</button>
+ <button onclick="showDay('notes')">📝 Notes</button>
+</nav>
+
+<main class="wrap" id="contentWrap">
+ <div class="note"><b>Conversion used:</b> 1 NTD = 2 PHP. Budget tables below exclude food and shopping.</div>
+
+<section class="day" id="day1">
+<h2>Day 1 — July 8: Taipei City</h2>
+<img class="day-hero" src="d1.png" onerror="this.onerror=null;this.src='d1.jpg'" alt="Day 1 cover image">
+<div class="stay">Hotel: Ximen Le Room Hotel Kaifeng Taipei</div>
+<div class="grid"><div class="box"><h3>Attractions + Time Allocation</h3><div class="timeline">
+<div class="slot"><div class="time">8:00–12:00</div><img class="mini-img" src="zoo.png" onerror="this.onerror=null;this.src='zoo.jpg'" alt="Taipei Zoo"><div><b>Taipei Zoo + optional Maokong Gondola</b><br><span class="tag">Zoo entrance: NT$100 / ₱200</span><span class="tag">Maokong Gondola optional: NT$240 round trip / ₱480</span><br>How to go: MRT Brown Line to Taipei Zoo Station. Visit the zoo, then walk to Maokong Gondola Taipei Zoo Station if you want the scenic ride.</div></div>
+<div class="slot"><div class="time">12:30–13:00</div><div class="cover-fallback">🏨</div><div><b>Back to hotel</b><br>Grab lunch near the hotel before resting.</div></div>
+<div class="slot"><div class="time">13:30–15:00</div><div class="cover-fallback">💤</div><div><b>Nap time at the hotel</b><br>Recharge, shower, and prepare for the sunset walk.</div></div>
+<div class="slot"><div class="time">16:00–17:30</div><img class="mini-img" src="em.png" onerror="this.onerror=null;this.src='em.jpg'" alt="Elephant Mountain"><div><b>Elephant Mountain / Xiangshan</b><br><span class="tag">Free</span><br>How to go: MRT Red Line to Xiangshan Station, then walk to the trail entrance.</div></div>
+<div class="slot"><div class="time">18:30–20:00</div><img class="mini-img" src="hooters.png" onerror="this.onerror=null;this.src='hooter.jpg'" alt="Taipei 101 area"><div><b>Taipei 101 area</b><br><span class="tag">Observatory optional: NT$600 / ₱1,200</span><br>How to go: MRT Taipei 101 / World Trade Center Station.</div></div>
+<div class="slot"><div class="time">20:00–23:00</div><img class="mini-img" src="ximen.png" onerror="this.onerror=null;this.src='ximen.jpg'" alt="Ximending"><div><b>Ximending Night Market</b><br><span class="tag">Free to enter</span><br>How to go: MRT to Ximen Station.</div></div>
+<div class="slot"><div class="time">23:00</div><div class="cover-fallback">🌙</div><div><b>Return to hotel</b><br>Rest for Day 2.</div></div>
+</div></div><div class="box"><h3>Suggested Outfit for 3 Girls</h3><div class="outfits"><div class="girl"><b>Girl 1</b><br>Pastel pink linen dress, comfy white sneakers, mini sling bag.</div><div class="girl"><b>Girl 2</b><br>White top, denim skort, ribbon hair clip, light cardigan.</div><div class="girl"><b>Girl 3</b><br>Floral blouse, beige shorts, cute cap, walking sandals.</div></div><h3>Must-Try Foods in Taipei</h3><div class="note">🍜 Beef noodle soup<br>🥟 Xiao long bao<br>🧋 Bubble tea<br>🍗 Hot Star fried chicken<br>🥭 Mango shaved ice<br>🍞 Ximending cheese potato or street snacks</div><h3>Budget Estimate</h3><table class="budget"><tr><th>Item</th><th>Per person</th><th>3 girls</th></tr><tr><td>Attractions</td><td>NT$700 / ₱1,400</td><td>NT$2,100 / ₱4,200</td></tr><tr><td>MRT/taxi buffer</td><td>NT$200 / ₱400</td><td>NT$600 / ₱1,200</td></tr><tr class="total"><td>Total</td><td>NT$900 / ₱1,800</td><td>NT$2,700 / ₱5,400</td></tr></table></div></div></section>
+
+<section class="day" id="day2">
+<h2>Day 2 — July 9: Northern Taiwan Adventure</h2>
+<img class="day-hero" src="d2.png" onerror="this.onerror=null;this.src='d2.jpg'" alt="Day 2 cover image">
+<div class="stay">Stay: Your apartment</div>
+<div class="grid"><div class="box"><h3>Attractions + Time Allocation</h3><div class="timeline">
+<div class="slot"><div class="time">8:00</div><div class="cover-fallback">☀️</div><div><b>Wake up + prepare</b><br>Wear breathable clothes and bring umbrella, fan, and water.</div></div>
+<div class="slot"><div class="time">9:30–10:30</div><img class="mini-img" src="ck.png" onerror="this.onerror=null;this.src='ck.jpg'" alt="Chiang Kai-shek Memorial Hall"><div><b>Chiang Kai-shek Memorial Hall</b><br><span class="tag">Free</span><br>How to go: MRT to Chiang Kai-shek Memorial Hall Station.</div></div>
+<div class="slot"><div class="time">11:00–20:30</div><img class="mini-img" src="north.png" onerror="this.onerror=null;this.src='north.jpg'" alt="North Coast"><div><b>Klook North Coast Tour</b><br>Yehliu Geopark, Shifen Waterfall, Shifen Old Street, and Jiufen Night Street.<br><span class="tag">Yehliu entrance: NT$120 / ₱240</span><span class="tag">Shifen Waterfall: Free</span><span class="tag">Tour estimate: NT$1,100–1,500 / ₱2,200–3,000</span></div></div>
+<div class="slot"><div class="time">21:00</div><div class="cover-fallback">🚄</div><div><b>HSR Taipei → Taichung</b><br><span class="tag">Ticket for two: NT$800 / ₱1,600</span><br>Then return to the apartment.</div></div>
+</div></div><div class="box"><h3>Suggested Outfit for 3 Girls</h3><div class="outfits"><div class="girl"><b>Girl 1</b><br>Soft yellow top, flowy skirt-short, waterproof sandals.</div><div class="girl"><b>Girl 2</b><br>Lavender tee, culottes, bucket hat, crossbody bag.</div><div class="girl"><b>Girl 3</b><br>White eyelet blouse, denim shorts, comfy sneakers.</div></div><h3>Must-Try Foods on Day 2</h3><div class="note">🏮 Jiufen taro balls<br>🍠 Sweet potato balls<br>🍵 A-Mei tea house style tea/snacks<br>🥜 Peanut ice cream roll<br>🍢 Fish balls or street skewers<br>🥤 Old street drinks</div><h3>Budget Estimate</h3><table class="budget"><tr><th>Item</th><th>Per person</th><th>3 girls</th></tr><tr><td>Klook tour + Yehliu</td><td>NT$1,420 / ₱2,840</td><td>NT$4,260 / ₱8,520</td></tr><tr><td>HSR/MRT buffer</td><td>NT$500 / ₱1,000</td><td>NT$1,500 / ₱3,000</td></tr><tr class="total"><td>Total</td><td>NT$1,920 / ₱3,840</td><td>NT$5,760 / ₱11,520</td></tr></table></div></div></section>
+
+<section class="day" id="day3">
+<h2>Day 3 — July 10: Sun Moon Lake</h2>
+<img class="day-hero" src="d3.png" onerror="this.onerror=null;this.src='d3.jpg'" alt="Day 3 cover image">
+<div class="stay">Stay: Your apartment</div>
+<div class="grid"><div class="box"><h3>Attractions + Time Allocation</h3><div class="timeline">
+<div class="slot"><div class="time">7:00–9:00</div><img class="mini-img" src="sml.png" onerror="this.onerror=null;this.src='sml.jpg'" alt="Sun Moon Lake"><div><b>Travel to Sun Moon Lake</b><br>How to go: Taichung Gancheng or Taichung HSR bus to Sun Moon Lake.<br><span class="tag">Bus fare: NT$195 one way / ₱390</span><span class="tag">Round trip: NT$360 / ₱720</span></div></div>
+<div class="slot"><div class="time">9:00–12:00</div><img class="mini-img" src="bike.png" onerror="this.onerror=null;this.src='bike.jpg'" alt="Bike around Sun Moon Lake"><div><b>Bike around Sun Moon Lake</b><br><span class="tag">Bike estimate: NT$200–300 / ₱400–600</span></div></div>
+<div class="slot"><div class="time">12:00–13:00</div><div class="cover-fallback">🍱</div><div><b>Lunch break</b><br>Rest before the afternoon lake and temple visit.</div></div>
+<div class="slot"><div class="time">13:00–16:00</div><img class="mini-img" src="boat.png" onerror="this.onerror=null;this.src='boat.jpg'" alt="Boat Tour"><div><b>Boat tour</b><br><span class="tag">Boat: NT$300 / ₱600</span></div></div>
+<div class="slot"><div class="time">16:00–17:00</div><img class="mini-img" src="wenwu.png" onerror="this.onerror=null;this.src='wenwu.jpg'" alt="Wenwu Temple"><div><b>Wenwu Temple</b><br><span class="tag">Free</span><br>Beautiful lake-view temple photo stop.</div></div>
+<div class="slot"><div class="time">17:00–19:00</div><img class="mini-img" src="miya.png" onerror="this.onerror=null;this.src='miya.jpg'" alt="Miyahara"><div><b>Miyahara, Taichung</b><br><span class="tag">Free to enter</span><span class="tag">Ice cream: from NT$100 / ₱200</span><span class="tag">2 scoops: about NT$180 / ₱360</span></div></div>
+</div></div><div class="box"><h3>Suggested Outfit for 3 Girls</h3><div class="outfits"><div class="girl"><b>Girl 1</b><br>Mint active top, skort, sneakers, sunglasses.</div><div class="girl"><b>Girl 2</b><br>Pink cotton shirt, biker shorts, cap, small backpack.</div><div class="girl"><b>Girl 3</b><br>Blue sundress with cycling shorts inside, white sneakers.</div></div><h3>Budget Estimate</h3><table class="budget"><tr><th>Item</th><th>Per person</th><th>3 girls</th></tr><tr><td>Transport</td><td>NT$600 / ₱1,200</td><td>NT$1,800 / ₱3,600</td></tr><tr><td>Bike + boat</td><td>NT$600 / ₱1,200</td><td>NT$1,800 / ₱3,600</td></tr><tr class="total"><td>Total</td><td>NT$1,200 / ₱2,400</td><td>NT$3,600 / ₱7,200</td></tr></table></div></div></section>
+
+<section class="day" id="day4">
+<h2>Day 4 — July 11: Alishan → Kaohsiung</h2>
+<img class="day-hero" src="d4.png" onerror="this.onerror=null;this.src='d4.jpg'" alt="Day 4 cover image">
+<div class="stay">Hotel: Kung Shang Design Hotel & Dorm of Light at Formosa Boulevard</div>
+<div class="grid"><div class="box"><h3>Attractions + Time Allocation</h3><div class="timeline">
+<div class="slot"><div class="time">7:00–11:00</div><img class="mini-img" src="alishan.png" onerror="this.onerror=null;this.src='alishan.jpg'" alt="Alishan National Forest"><div><b>Travel to Alishan National Forest</b><br>How to go: TRA train from Changhua to Chiayi, then bus from Chiayi to Alishan.<br><span class="tag">Changhua → Chiayi train estimate: NT$150–230 / ₱300–460</span><span class="tag">Chiayi TRA → Alishan bus: NT$240 one way / ₱480</span></div></div>
+<div class="slot"><div class="time">11:00–15:00</div><img class="mini-img" src="alishan.png" onerror="this.onerror=null;this.src='alishan.jpg'" alt="Alishan National Forest"><div><b>Alishan National Forest</b><br><span class="tag">Entrance estimate: NT$300 / ₱600</span><br>Forest trails, giant trees, cool weather, and mountain views.</div></div>
+<div class="slot"><div class="time">15:00–19:00</div><div class="cover-fallback">🚆</div><div><b>Alishan → Kaohsiung Station</b><br>Route: bus from Alishan to Chiayi, then TRA train from Chiayi to Kaohsiung Station.<br><span class="tag">Alishan → Chiayi bus: NT$240 / ₱480</span><span class="tag">Chiayi → Kaohsiung TRA train estimate: NT$139–245 / ₱278–490</span><br>Long travel day; prepare snacks, water, and power bank.</div></div>
+<div class="slot"><div class="time">19:00–20:00</div><img class="mini-img" src="dome.png" onerror="this.onerror=null;this.src='dome.jpg'" alt="Dome of Light"><div><b>Hotel check-in + Dome of Light</b><br><span class="tag">Free</span></div></div>
+<div class="slot"><div class="time">20:00–22:00</div><img class="mini-img" src="love.png" onerror="this.onerror=null;this.src='love.jpg'" alt="Love River"><div><b>Love River, love boat, Central Park</b><br><span class="tag">Evening walk/photo stop</span></div></div>
+<div class="slot"><div class="time">22:00 onwards</div><div class="cover-fallback">🌙</div><div><b>Free time</b><br>Rest and prepare for departure day.</div></div>
+</div></div><div class="box"><h3>Suggested Outfit for 3 Girls</h3><div class="outfits"><div class="girl"><b>Girl 1</b><br>Light jacket, pastel tee, leggings, trail sneakers.</div><div class="girl"><b>Girl 2</b><br>Cardigan, breathable pants, cute beanie or cap.</div><div class="girl"><b>Girl 3</b><br>Long-sleeve UV top, soft shorts, anti-slip shoes.</div></div><h3>Must-Try Foods in Kaohsiung</h3><div class="note">🍧 Kaohsiung shaved ice<br>🦪 Oyster omelet<br>🍜 Dan zai noodles<br>🍗 Taiwanese fried chicken<br>🥤 Papaya milk<br>🥟 Dumplings or night market snacks</div><h3>Budget Estimate</h3><table class="budget"><tr><th>Item</th><th>Per person</th><th>3 girls</th></tr><tr><td>Transport</td><td>NT$1,200 / ₱2,400</td><td>NT$3,600 / ₱7,200</td></tr><tr><td>Alishan entrance</td><td>NT$300 / ₱600</td><td>NT$900 / ₱1,800</td></tr><tr class="total"><td>Total</td><td>NT$1,500 / ₱3,000</td><td>NT$4,500 / ₱9,000</td></tr></table></div></div></section>
+
+<section class="day" id="day5">
+<h2>Day 5 — July 12: Kaohsiung & Departure</h2>
+<img class="day-hero" src="d5.png" onerror="this.onerror=null;this.src='d5.jpg'" alt="Day 5 cover image">
+<div class="stay">Departure: Depart from KHH Airport. Be at the airport by 4:30–5:30 PM.</div>
+<div class="grid"><div class="box"><h3>Attractions + Time Allocation</h3><div class="timeline">
+<div class="slot"><div class="time">7:30–9:00</div><img class="mini-img" src="dt.png" onerror="this.onerror=null;this.src='dt.jpg'" alt="Dragon and Tiger Pagodas"><div><b>Dragon and Tiger Pagodas</b><br><span class="tag">Free</span><br>How to go: MRT to Zuoying, then bus or taxi to Lotus Pond.</div></div>
+<div class="slot"><div class="time">9:30–10:30</div><img class="mini-img" src="church.png" onerror="this.onerror=null;this.src='church.jpg'" alt="Sunday Mass"><div><b>Sunday Mass</b><br>Check church schedule near the hotel or Zuoying.</div></div>
+<div class="slot"><div class="time">10:30–12:00</div><img class="mini-img" src="cijin.png" onerror="this.onerror=null;this.src='cijin.jpg'" alt="Cijin Island"><div><b>Brunch + Cijin Island exploration</b><br><span class="tag">Ferry estimate: NT$30 each way / ₱60 each way</span></div></div>
+<div class="slot"><div class="time">12:00–15:00</div><div class="cover-fallback">🛍️</div><div><b>SKM or free time</b><br>Alternative: Buddha Museum if there is enough time.</div></div>
+<div class="slot"><div class="time">16:30–17:30</div><img class="mini-img" src="airplane.png" onerror="this.onerror=null;this.src='airplane.jpg'" alt="KHH Airport"><div><b>Depart from KHH Airport</b><br>How to go: Kaohsiung MRT Red Line to Kaohsiung International Airport Station.</div></div>
+</div></div><div class="box"><h3>Suggested Outfit for 3 Girls</h3><div class="outfits"><div class="girl"><b>Girl 1</b><br>Pink maxi skirt, white tee, travel flats.</div><div class="girl"><b>Girl 2</b><br>Soft blue dress, cardigan for church, sandals.</div><div class="girl"><b>Girl 3</b><br>Beige trousers, floral blouse, sneakers for airport.</div></div><h3>Budget Estimate</h3><table class="budget"><tr><th>Item</th><th>Per person</th><th>3 girls</th></tr><tr><td>Transport + ferry</td><td>NT$250 / ₱500</td><td>NT$750 / ₱1,500</td></tr><tr><td>Attractions</td><td>NT$0 / ₱0</td><td>NT$0 / ₱0</td></tr><tr class="total"><td>Total</td><td>NT$250 / ₱500</td><td>NT$750 / ₱1,500</td></tr></table></div></div></section>
+
+<section class="day notes-page" id="notes"><h2>Notes</h2><div class="stay">Type your travel notes, reminders, booking details, or packing list here.</div><textarea id="travelNotes" placeholder="Example: Bring sunscreen, umbrella, mini fan, passport, EasyCard, power bank..."></textarea><div class="savebar"><button onclick="saveNotes()">Save Notes</button><button onclick="clearNotes()">Clear Notes</button><span id="saveStatus">Your notes will be saved in this browser.</span></div></section>
+
+<section class="day" id="summary"><h2>Overall Budget Estimate</h2><table class="budget"><tr><th>Day</th><th>Per person</th><th>For 3 girls</th></tr><tr><td>Day 1 Taipei</td><td>NT$900 / ₱1,800</td><td>NT$2,700 / ₱5,400</td></tr><tr><td>Day 2 Yehliu–Jiufen</td><td>NT$1,920 / ₱3,840</td><td>NT$5,760 / ₱11,520</td></tr><tr><td>Day 3 Sun Moon Lake</td><td>NT$1,200 / ₱2,400</td><td>NT$3,600 / ₱7,200</td></tr><tr><td>Day 4 Alishan–Kaohsiung</td><td>NT$1,500 / ₱3,000</td><td>NT$4,500 / ₱9,000</td></tr><tr><td>Day 5 Kaohsiung</td><td>NT$250 / ₱500</td><td>NT$750 / ₱1,500</td></tr><tr class="total"><td>Trip total estimate</td><td>NT$5,770 / ₱11,540</td><td>NT$17,310 / ₱34,620</td></tr></table><div class="note">This estimate excludes food, drinks, souvenirs, shopping, and hotel costs. Optional Maokong Gondola and Miyahara ice cream are listed as add-ons but are not included in the total budget.</div></section>
+</main>
+<footer class="footer">Bring sunscreen, mini fan, umbrella, water bottle, EasyCard/iPASS, passport/ARC, and power bank. 💛🌸</footer>
+<script>
+function setActiveButton(id){
+  document.querySelectorAll('.quick button,.topnav button').forEach(btn=>btn.classList.remove('active'));
+  document.querySelectorAll('.quick button,.topnav button').forEach(btn=>{
+    if(btn.getAttribute('onclick') && btn.getAttribute('onclick').includes(id)) btn.classList.add('active');
+  });
+}
+function showDay(id){
+  document.getElementById('contentWrap').classList.add('show');
+  document.querySelectorAll('.day').forEach(day=>day.classList.remove('active'));
+  document.getElementById(id).classList.add('active');
+  setActiveButton(id);
+  document.getElementById('contentWrap').scrollIntoView({behavior:'smooth'});
+}
+function goHome(){
+  document.getElementById('contentWrap').classList.remove('show');
+  document.querySelectorAll('.day').forEach(day=>day.classList.remove('active'));
+  document.querySelectorAll('.quick button,.topnav button').forEach(btn=>btn.classList.remove('active'));
+  document.getElementById('home').scrollIntoView({behavior:'smooth'});
+}
+function saveNotes(){
+  const notes=document.getElementById('travelNotes').value;
+  localStorage.setItem('taiwanGirlsTripNotes2026',notes);
+  document.getElementById('saveStatus').textContent='Saved! Your notes will stay here when you reopen this browser.';
+}
+function clearNotes(){
+  document.getElementById('travelNotes').value='';
+  localStorage.removeItem('taiwanGirlsTripNotes2026');
+  document.getElementById('saveStatus').textContent='Notes cleared.';
+}
+window.addEventListener('load',()=>{
+  document.getElementById('travelNotes').value=localStorage.getItem('taiwanGirlsTripNotes2026')||'';
+});
+</script>
+</body>
+</html>
