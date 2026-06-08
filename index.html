@@ -257,22 +257,22 @@ textarea{
 
     <div class="quick">
       <button onclick="showDay('day1')">
-        <img class="cover-img" src="d1.png" onerror="this.src='d1.jpg'">
+        <img class="cover-img" src="Day1.jpg" data-fallback-srcs="Day1.png|d1.jpg|d1.png" data-emoji="🏙️" onerror="handleImgError(this)">
         <span class="day-label">Day 1</span><br>Taipei City
       </button>
 
       <button onclick="showDay('day2')">
-        <img class="cover-img" src="d2.png" onerror="this.src='d2.jpg'">
+        <img class="cover-img" src="Day2.jpg" data-fallback-srcs="Day2.png|d2.jpg|d2.png" data-emoji="🏮" onerror="handleImgError(this)">
         <span class="day-label">Day 2</span><br>Jiufen Lantern
       </button>
 
       <button onclick="showDay('day3')">
-        <img class="cover-img" src="d3.png" onerror="this.src='d3.jpg'">
+        <img class="cover-img" src="Day3.jpg" data-fallback-srcs="Day3.png|d3.jpg|d3.png" data-emoji="🚲" onerror="handleImgError(this)">
         <span class="day-label">Day 3</span><br>Sun Moon Lake
       </button>
 
       <button onclick="showDay('day4')">
-        <img class="cover-img" src="d4.png" onerror="this.src='d4.jpg'">
+        <img class="cover-img" src="Day 4.jpg" data-fallback-srcs="Day 4.png|Day4.jpg|Day4.png|d4.jpg|d4.png" data-emoji="🐉" onerror="handleImgError(this)">
         <span class="day-label">Day 4</span><br>Kaohsiung
       </button>
     </div>
@@ -296,7 +296,7 @@ textarea{
 
 <section class="day" id="day1">
   <h2>Day 1 — July 8: Manila to Taipei</h2>
-  <img class="day-hero" src="d1.png" onerror="this.src='d1.jpg'">
+  <img class="day-hero" src="Day1.jpg" data-fallback-srcs="Day1.png|d1.jpg|d1.png" data-emoji="🏙️" onerror="handleImgError(this)">
   <div class="stay">Hotel to rest: Cosmos Hotel Taipei</div>
 
   <div class="grid">
@@ -334,7 +334,7 @@ textarea{
 
         <div class="slot">
           <div class="time">12:30–4:00 PM</div>
-          <img class="mini-img" src="zoo.png" onerror="this.src='zoo.jpg'">
+          <img class="mini-img" src="zoo.png" data-fallback-srcs="zoo.jpg" data-emoji="🦁" onerror="handleImgError(this)">
           <div>
             <b>Taipei Zoo + Maokong Gondola</b><br>
             <span class="tag">Zoo entrance: NT$100 / ₱200</span>
@@ -350,13 +350,13 @@ textarea{
 
         <div class="slot">
           <div class="time">5:00–7:00 PM</div>
-          <img class="mini-img" src="hooters.png" onerror="this.src='hooter.jpg'">
+          <img class="mini-img" src="hooters.png" data-fallback-srcs="hooter.jpg|hooters.jpg" data-emoji="🍽️" onerror="handleImgError(this)">
           <div><b>Hooters for dinner</b><br>Enjoy dinner near Taipei 101 area.</div>
         </div>
 
         <div class="slot">
           <div class="time">8:00 PM</div>
-          <img class="mini-img" src="hooters.png" onerror="this.src='hooter.jpg'">
+          <img class="mini-img" src="taipei101.png" data-fallback-srcs="taipei101.jpg|taipei101.jpeg" data-emoji="🏙️" onerror="handleImgError(this)">
           <div>
             <b>Taipei 101</b><br>
             <span class="tag">Coffee hack</span>
@@ -366,13 +366,13 @@ textarea{
 
         <div class="slot">
           <div class="time">10:00 PM</div>
-          <img class="mini-img" src="ximen.png" onerror="this.src='ximen.jpg'">
+          <img class="mini-img" src="ximen.png" data-fallback-srcs="ximen.jpg" data-emoji="🌃" onerror="handleImgError(this)">
           <div><b>Ximending</b><br>Short night walk, photos, and snacks.</div>
         </div>
 
         <div class="slot">
           <div class="time">After Ximending</div>
-          <div class="fallback">🏨</div>
+          <img class="mini-img" src="cosmos.jpg" data-fallback-srcs="cosmos.png|Cosmos.jpg|Cosmos.png" data-emoji="🏨" onerror="handleImgError(this)">
           <div><b>Hotel: Cosmos Hotel Taipei</b><br>Return to hotel and rest.</div>
         </div>
       </div>
@@ -404,7 +404,7 @@ textarea{
 
 <section class="day" id="day2">
   <h2>Day 2 — July 9: Northern Taiwan Adventure</h2>
-  <img class="day-hero" src="d2.png" onerror="this.src='d2.jpg'">
+  <img class="day-hero" src="Day2.jpg" data-fallback-srcs="Day2.png|d2.jpg|d2.png" data-emoji="🏮" onerror="handleImgError(this)">
   <div class="stay">Accommodation: Jessy’s Apartment</div>
 
   <div class="grid">
@@ -420,13 +420,13 @@ textarea{
 
         <div class="slot">
           <div class="time">9:30–10:30</div>
-          <img class="mini-img" src="ck.png" onerror="this.src='ck.jpg'">
+          <img class="mini-img" src="ck.png" data-fallback-srcs="ck.jpg" data-emoji="🏛️" onerror="handleImgError(this)">
           <div><b>Chiang Kai-shek Memorial Hall</b><br><span class="tag">Free</span><br>How to go: MRT to Chiang Kai-shek Memorial Hall Station.</div>
         </div>
 
         <div class="slot">
           <div class="time">11:00–20:30</div>
-          <img class="mini-img" src="north.png" onerror="this.src='north.jpg'">
+          <img class="mini-img" src="north.png" data-fallback-srcs="north.jpg" data-emoji="🏮" onerror="handleImgError(this)">
           <div>
             <b>Klook North Coast Tour</b><br>
             Yehliu Geopark, Shifen Waterfall, Shifen Old Street, and Jiufen Night Street.<br>
@@ -468,7 +468,7 @@ textarea{
 
 <section class="day" id="day3">
   <h2>Day 3 — July 10: Sun Moon Lake</h2>
-  <img class="day-hero" src="d3.png" onerror="this.src='d3.jpg'">
+  <img class="day-hero" src="Day3.jpg" data-fallback-srcs="Day3.png|d3.jpg|d3.png" data-emoji="🚲" onerror="handleImgError(this)">
   <div class="stay">Accommodation: Lilong Hotel Kaohsiung</div>
 
   <div class="grid">
@@ -484,19 +484,19 @@ textarea{
 
         <div class="slot">
           <div class="time">7:40 AM</div>
-          <img class="mini-img" src="sml.png" onerror="this.src='sml.jpg'">
+          <img class="mini-img" src="sml.png" data-fallback-srcs="sml.jpg" data-emoji="🌊" onerror="handleImgError(this)">
           <div><b>THSR Taichung Station → Sun Moon Lake</b><br>Take Sun Moon Lake 6670B bus from THSR Taichung Station.<br><span class="tag">Bus fare: NT$195 one way / ₱390</span><span class="tag">Round trip: NT$360 / ₱720</span></div>
         </div>
 
         <div class="slot">
           <div class="time">9:30 AM</div>
-          <img class="mini-img" src="wenwu.png" onerror="this.src='wenwu.jpg'">
+          <img class="mini-img" src="wenwu.png" data-fallback-srcs="wenwu.jpg" data-emoji="⛩️" onerror="handleImgError(this)">
           <div><b>Wenwu Temple</b><br><span class="tag">Free</span><br>Enjoy the lake view and take photos.</div>
         </div>
 
         <div class="slot">
           <div class="time">10:30 AM</div>
-          <img class="mini-img" src="boat.png" onerror="this.src='boat.jpg'">
+          <img class="mini-img" src="boat.png" data-fallback-srcs="boat.jpg" data-emoji="⛴️" onerror="handleImgError(this)">
           <div><b>Boat Tour — Hop On and Hop Off</b><br><span class="tag">Boat: NT$300 / ₱600</span><br>Enjoy the lake by boat and visit different stops.</div>
         </div>
 
@@ -508,19 +508,19 @@ textarea{
 
         <div class="slot">
           <div class="time">1:00 PM</div>
-          <img class="mini-img" src="boat.png" onerror="this.src='boat.jpg'">
+          <img class="mini-img" src="boat.png" data-fallback-srcs="boat.jpg" data-emoji="⛴️" onerror="handleImgError(this)">
           <div><b>Explore SML Boat Tour</b><br>Continue exploring Sun Moon Lake by boat.</div>
         </div>
 
         <div class="slot">
           <div class="time">4:00 PM</div>
-          <img class="mini-img" src="sml.png" onerror="this.src='sml.jpg'">
+          <img class="mini-img" src="sml.png" data-fallback-srcs="sml.jpg" data-emoji="🌊" onerror="handleImgError(this)">
           <div><b>SML 6670B to Taichung Railway Station</b><br>Return to Taichung for the evening activity.</div>
         </div>
 
         <div class="slot">
           <div class="time">6:30 PM</div>
-          <img class="mini-img" src="miya.png" onerror="this.src='miya.jpg'">
+          <img class="mini-img" src="miya.png" data-fallback-srcs="miya.jpg" data-emoji="🍦" onerror="handleImgError(this)">
           <div><b>Miyahara Taichung</b><br><span class="tag">Free to enter</span><span class="tag">Ice cream: from NT$100 / ₱200</span><span class="tag">2 scoops: about NT$180 / ₱360</span></div>
         </div>
 
@@ -552,7 +552,7 @@ textarea{
 
 <section class="day" id="day4">
   <h2>Day 4 — July 11: Kaohsiung + Flight to Manila</h2>
-  <img class="day-hero" src="d4.png" onerror="this.src='d4.jpg'">
+  <img class="day-hero" src="Day 4.jpg" data-fallback-srcs="Day 4.png|Day4.jpg|Day4.png|d4.jpg|d4.png" data-emoji="🐉" onerror="handleImgError(this)">
   <div class="stay">Flight: Kaohsiung → Manila at 18:25</div>
 
   <div class="grid">
@@ -562,13 +562,13 @@ textarea{
       <div class="timeline">
         <div class="slot">
           <div class="time">8:00–9:30</div>
-          <img class="mini-img" src="dt.png" onerror="this.src='dt.jpg'">
+          <img class="mini-img" src="dt.png" data-fallback-srcs="dt.jpg" data-emoji="🐉" onerror="handleImgError(this)">
           <div><b>Dragon and Tiger Pagodas</b><br><span class="tag">Free</span><br>How to go: MRT to Zuoying, then bus or taxi to Lotus Pond.</div>
         </div>
 
         <div class="slot">
           <div class="time">10:00–12:00</div>
-          <img class="mini-img" src="cijin.png" onerror="this.src='cijin.jpg'">
+          <img class="mini-img" src="cijin.png" data-fallback-srcs="cijin.jpg" data-emoji="🏝️" onerror="handleImgError(this)">
           <div><b>Cijin Island</b><br><span class="tag">Ferry estimate: NT$30 each way / ₱60 each way</span><br>Good for brunch, seaside photos, and a relaxed walk.</div>
         </div>
 
@@ -580,7 +580,7 @@ textarea{
 
         <div class="slot">
           <div class="time">15:30–16:00</div>
-          <img class="mini-img" src="airplane.png" onerror="this.src='airplane.jpg'">
+          <img class="mini-img" src="airplane.png" data-fallback-srcs="airplane.jpg" data-emoji="✈️" onerror="handleImgError(this)">
           <div><b>Go to Kaohsiung International Airport</b><br>How to go: Kaohsiung MRT Red Line to Kaohsiung International Airport Station.</div>
         </div>
 
@@ -646,6 +646,24 @@ textarea{
 </footer>
 
 <script>
+function handleImgError(img){
+  var list = (img.getAttribute('data-fallback-srcs') || '').split('|').filter(Boolean);
+  var next = list.shift();
+  if(next){
+    img.setAttribute('data-fallback-srcs', list.join('|'));
+    img.onerror = function(){ handleImgError(img); };
+    img.src = next;
+    return;
+  }
+  var emoji = img.getAttribute('data-emoji') || '🌸';
+  var div = document.createElement('div');
+  div.className = img.classList.contains('cover-img') || img.classList.contains('day-hero') ? 'fallback' : 'fallback';
+  if(img.classList.contains('cover-img')){ div.style.width='100%'; div.style.height='125px'; }
+  if(img.classList.contains('day-hero')){ div.style.width='100%'; div.style.height='250px'; }
+  div.textContent = emoji;
+  img.replaceWith(div);
+}
+
 function setActiveButton(id){
   document.querySelectorAll('.quick button,.topnav button').forEach(function(btn){
     btn.classList.remove('active');
